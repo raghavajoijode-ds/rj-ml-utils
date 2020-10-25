@@ -1,0 +1,11 @@
+pip install --user --upgrade setuptools wheel twine
+
+
+python setup.py sdist bdist_wheel
+
+
+# Upload Package
+python -m twine upload --repository pypi dist/*
+
+# Install Package
+pip install example-pkg-raghavajoijode
